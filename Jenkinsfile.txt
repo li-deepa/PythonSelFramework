@@ -8,7 +8,7 @@ agent any
                     pip install -r requirements.txt
                     pytest PythonSelFramework/tests/test_e2e.py
                     pytest PythonSelFramework/tests/test_Homepage.py'''
-
+                    
             }
             post {
                 always {
