@@ -5,7 +5,8 @@ agent any
 
             steps {
                 bat script: '''
-                    
+                    pip install -U --ignore-installed python-openstackclient
+                    venv/scripts/activate
                     pip install -r requirements.txt
                     py.test PythonSelFramework/tests/test_e2e.py
                     py.test PythonSelFramework/tests/test_Homepage.py'''
