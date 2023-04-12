@@ -1,7 +1,7 @@
 # to run in terminal use -- py.test --browser_name chrome
 
-from .utilities.BaseClass import BaseClass
-from .pageObjects.HomePage import HomePage
+from ..utilities.BaseClass import BaseClass
+from ..pageObjects.HomePage import HomePage
 
 
 class TestOne(BaseClass):
