@@ -9,8 +9,8 @@ agent any
                     
                     pip install -r requirements.txt
                     cd tests
-                    py.test PythonSelFramework/tests/test_e2e.py
-                    py.test PythonSelFramework/tests/test_Homepage.py'''
+                    py.test -v -s test_e2e.py
+                    py.test -v -s test_Homepage.py'''
                     
             }
             post {
