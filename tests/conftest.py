@@ -17,7 +17,7 @@ def setup(request):
         # loading chrome into driver
         driver = webdriver.Chrome()
 
-    elif browser_name == "Edge":
+    elif browser_name == "edge":
         driver = webdriver.Edge()
 
     driver.get("https://rahulshettyacademy.com/angularpractice/")
