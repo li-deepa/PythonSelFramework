@@ -1,11 +1,8 @@
-import sys
-sys.path.append("..")
 
-
-from ..utilities.BaseClass import BaseClass
+from .utilities.BaseClass import BaseClass
 import pytest
-from ..pageObjects.HomePage import HomePage
-from ..TestData.HomePageData import HomePageData
+from .pageObjects.HomePage import HomePage
+from .TestData.HomePageData import HomePageData
 
 class TestTwo(BaseClass):
 
