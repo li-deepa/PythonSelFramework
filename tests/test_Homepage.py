@@ -1,8 +1,8 @@
 
-from .utilities.BaseClass import BaseClass
+from PythonSelFramework.utilities.BaseClass import BaseClass
 import pytest
-from .pageObjects.HomePage import HomePage
-from .TestData.HomePageData import HomePageData
+from PythonSelFramework.pageObjects.HomePage import HomePage
+from PythonSelFramework.TestData.HomePageData import HomePageData
 
 class TestTwo(BaseClass):
 
