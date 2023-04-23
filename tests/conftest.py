@@ -2,6 +2,7 @@ import pytest
 from Tools.scripts.fixdiv import report
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
+from TestData.HomePageData import HomePageData
 
 driver=None
 def pytest_addoption(parser):
@@ -20,7 +21,8 @@ def setup(request):
     elif browser_name == "edge":
         driver = webdriver.Edge()
 
-    driver.get("https://rahulshettyacademy.com/angularpractice/")
+    driver.get(HomePageData.test_url)
+
     driver.maximize_window()
     request.cls.driver = driver
     yield
