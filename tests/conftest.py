@@ -3,7 +3,7 @@ from Tools.scripts.fixdiv import report
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 
-#driver=None
+driver=None
 def pytest_addoption(parser):
     parser.addoption(
         "--browser_name", action="store", default="chrome")
