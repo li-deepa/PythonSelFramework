@@ -6,7 +6,7 @@ from pageObjects.HomePage import HomePage
 
 class TestOne(BaseClass):
 
-    def test_e2e(self):
+    def test_e2e(self,setup):
         log = self.getLogger()
         homepage = HomePage(self.driver)
         checkoutpage = homepage.shopItems()
