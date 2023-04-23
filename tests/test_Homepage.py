@@ -1,3 +1,7 @@
+import sys
+sys.path.append("..")
+
+
 from ..utilities.BaseClass import BaseClass
 import pytest
 from ..pageObjects.HomePage import HomePage
