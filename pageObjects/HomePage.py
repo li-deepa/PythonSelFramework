@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from ..pageObjects.CheckoutPage import CheckoutPage
+from pageObjects.CheckoutPage import CheckoutPage
 
 
 class HomePage:
