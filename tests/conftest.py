@@ -17,9 +17,8 @@ def setup(request):
         # loading chrome into driver
         driver = webdriver.Chrome()
 
-    # elif browser_name == "Edge":
-    #     # edgePath = r"C:\Users\DEEPA\PythonTesting\msedgedriver.exe"
-    #     driver = webdriver.Edge()
+    elif browser_name == "Edge":
+        driver = webdriver.Edge()
 
     driver.get("https://rahulshettyacademy.com/angularpractice/")
     driver.maximize_window()
