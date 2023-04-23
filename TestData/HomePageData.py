@@ -11,6 +11,7 @@ def open_workbook():
 
 class HomePageData:
     # test_HomePage_Data=[{"name":"deepa","email":"deepa","Password":"Ram"},{"name":"sahasra","email":"ram","Password":"ravan"}]
+    test_url="https://rahulshettyacademy.com/angularpractice/"
 
     @staticmethod
     def getTestData(test_case_name):
