@@ -1,10 +1,10 @@
 import pytest
-from Tools.scripts.fixdiv import report
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
+# from Tools.scripts.fixdiv import report
+# from webdriver_manager.chrome import ChromeDriverManager
+
 from TestData.HomePageData import HomePageData
 
-driver=None
+#driver=None
 def pytest_addoption(parser):
     parser.addoption(
         "--browser_name", action="store", default="chrome")
@@ -12,7 +12,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
-    global driver
+    from selenium import webdriver
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
         # loading chrome into driver
