@@ -1,6 +1,7 @@
 import pytest
 # from Tools.scripts.fixdiv import report
 # from webdriver_manager.chrome import ChromeDriverManager
+from selenium import webdriver
 
 from TestData.HomePageData import HomePageData
 
@@ -12,7 +13,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
-    from selenium import webdriver
+    
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
         # loading chrome into driver
